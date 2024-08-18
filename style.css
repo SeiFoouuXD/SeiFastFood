@@ -1,0 +1,255 @@
+*
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:0;
+    margin:0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+}
+a:hover{
+    color: red;
+}
+
+body
+{
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right,  rgba(10, 11, 25, 0.906)50%, gold 50%);
+}
+.container
+{
+height: 100%;
+}
+
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.container nav ul{
+    display: flex;
+    gap: 40px;
+    padding :20px;
+    margin: 20px;
+
+}
+
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+}
+.sidebar ul li a{
+    display: block;
+    padding: 15px;
+}
+.sidebar ul li{
+    padding-right: 120px;
+    width: 100%;
+   
+}
+.sidebar ul li a:hover{
+ background-color: rgba(0, 0, 0, 0.399);
+}
+.sidebar li i  {
+    position:absolute;
+    left: 10px;
+    font-size: larger;
+}
+/****************************************/
+#logo
+{
+   
+    padding: 10px;
+    margin: 10px;
+    
+}
+#logo img
+{
+    height: 170px;
+    position: absolute;
+    left:-100px;
+    top: -40px;
+    padding: 10px;
+    margin-right: 900px;
+    
+   
+
+}
+
+
+.container .image
+{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container .image img{
+    height: 400px;
+}
+
+.container .image img:hover{
+  transform: rotate(4deg)
+}
+
+
+
+.container .MarketingName  #word1
+{
+    color:  gold;
+   font-size: 90px;
+   font-weight: 600;
+
+}
+.container .MarketingName #word2
+{
+    color: rgba(10, 11, 25, 0.906);
+    font-size: 100px;
+    font-weight: 600;
+
+}
+
+.MarketingName
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 400px;
+    gap: 400px;
+   
+}
+
+.navbar
+{
+    display: none;
+
+}
+
+
+.sidebar{
+    background-color: rgba(255, 192, 203, 0);
+    height: 100vh;
+    width: 250px;
+    position:fixed;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 0 10px 6px #00000044;
+    backdrop-filter: blur(10px);
+    display: none;
+
+    
+}
+
+
+
+@media (max-width:1060px ) 
+{
+
+    
+    .container ul li
+    {
+        display:none;
+    }
+  
+    .container nav .navbar 
+    {
+     display: block;
+     padding: 40px;
+     padding-bottom: 30px;
+    }
+
+   .container .navbar a 
+   {
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+    font-size: 45px;
+    padding-bottom: 10px;
+   } 
+}
+
+
+@media (max-width:830px) and (min-width:800px)
+{
+    .MarketingName
+    {
+        bottom: 550px;
+        gap:350px;
+    }
+    .container .image img{
+        height: 380px;
+    }
+}
+@media (max-width:800px) and (min-width:745px)
+{
+    .MarketingName
+    {
+        bottom: 550px;
+        gap:300px;
+    }
+    .container .image img{
+        height: 350px;
+    }
+}
+
+@media (max-width:745px) and (min-width:630px )
+{
+    .MarketingName
+    {
+        bottom: 550px;
+        gap:200px;
+    }
+    .container .image img{
+        height: 320px;
+    }
+}
+
+@media (max-width:630px) and (min-width:600px)
+{
+    .MarketingName
+    {
+        bottom: 550px;
+        gap:200px;
+    }
+    .container .image img{
+        height: 320px;
+    }
+}
+ 
+@media (max-width:600px) and (min-width:300px)
+{
+    .MarketingName
+    {
+        bottom: 550px;
+        gap:110px;
+    }
+    .container .image img{
+        height: 320px;
+    }
+}
+
+@media (max-width:300px)  and (min-width:100px)
+{
+    .MarketingName
+    {
+        bottom: 550px;
+        gap:120px;
+    }
+    .container .image img{
+        height: 320px;
+    }
+}
+
