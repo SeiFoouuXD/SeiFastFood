@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<link rel="stylesheet" href="style.css">    
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<link rel="shortcut icon"  href="images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"  href="images/icon.png">
 
-<title>Zerdaoui | Mohamed</title>
+    <title>Zerdaoui | Seif</title>
 </head>
-
 <body>
     <div class="sidebar">
         <li onclick=hideSidebar()><a href="#"><i class='bx bx-x' ></i></a></li>
-
         <ul>
             <li><a href="#Home">Home</a></li>
             <li><a href="#Menu">Menu</a></li>
@@ -20,43 +19,30 @@
             <li><a href="#Find Us">Find Us</a></li>
         </ul>
     </div>
-    <div class="container">
+
+    <nav>
         
+        <a id="logo" href="https://www.youtube.com"><img src="images/logo.png" alt=""></a>
 
-            <nav>
-                <a id="logo" href="#logo"><img src="images/logo.png" alt=""></a>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Menu">Menu</a></li>
+            <li><a href="#About Us">About Us</a></li>
+            <li><a href="#Find Us">Find Us</a></li>
+        </ul>
+        
+        <div onclick=showSidebar() class="navbar">
+            <a href="#"><i class='bx bx-menu'></i></a>
+        </div>
+    </nav>
 
-                <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Menu">Menu</a></li>
-                    <li><a href="#About Us">About Us</a></li>
-                    <li><a href="#Find Us">Find Us</a></li>
-                </ul>
-
-                <div onclick=showSidebar() class="navbar">
-                    <a href="#"><i class='bx bx-menu'></i></a>
-                </div>
-                
-
-            </nav>
-
-            <div class="image">
-                <img src="images/hamburger.png" alt="">
-            </div>
-
-
-            <div class="MarketingName">
-                     <p id="word1" >برجر</p>
-                     <p id="word2" >سلطع</p>
-           </div>
-
+    <div class="content">
+        <div class="MarketingName">
+            <p id="word1" >برجر</p>
+            <p id="word2" >سلطع</p>
+        </div>
+        <img src="images/hamburger.png" alt="">
     </div>
-
-    <script src="script.js"></script>
-
+    <script src="script.js" ></script>
 </body>
-</html> 
-
-
-
-
+</html>
